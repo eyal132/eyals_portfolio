@@ -8,7 +8,7 @@ function Navbar() {
         <li><a href="default.asp">Home</a></li>
         <li><a href="about.asp">About</a></li>
         <li><a href="news.asp">Contact</a></li>
-        <img class="linkedInIcon" src={Linkedin} />
+        <img className="linkedInIcon" src={Linkedin} />
         </ul>
         </section>
     );

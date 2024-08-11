@@ -5,20 +5,53 @@ import eyalIMG from './media/eyal-portrait.png'
 
 function App() {
   return (
-    <div className="App">
+    <section>
+    <div className="App" >
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       <Navbar />
       <p>
-        <span class="name">Eyal's </span><span class="second_word"> Portfolio</span>
+        <span className="name">Eyal's </span><span className="second_word"> Portfolio</span>
       </p>
       <header className="App-header">
+        <div className="mainContainer">
         <h1>Explore my history of projects.</h1>
-        <button class="contactbtn">Contact</button>
+        <button className="contactbtn">Contact</button>
+        </div>
 
         <h3>My Journey</h3>
-        <img class="arrowIMG" src={Arrow} />
-        <img class="eyalIMG" src={eyalIMG} />
+        <img className="arrowIMG" src={Arrow} />
+        <img className="eyalIMG" src={eyalIMG} />
       </header>
     </div>
+    <body> 
+    <div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>2017</h2>
+      <p>Lorem ipsum..</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2016</h2>
+      <p>Lorem ipsum..</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2017</h2>
+      <p>Lorem ipsum..</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2016</h2>
+      <p>Lorem ipsum..</p>
+    </div>
+  </div>
+</div>
+</body> 
+    </section>
   );
 }
 

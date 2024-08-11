@@ -1,8 +1,155 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orelega+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orelega+One&family=Pacifico&display=swap');
 
-html {
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Set a background color */
+body {
+  background-color: #ffffff;
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
   background-color: #202225;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #202225;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #202225;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #202225;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #202225 transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: #202225;
+  position: relative;
+  border-radius: 6px;
+  color: white;
+  font-family: "Orelega One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid #202225;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #202225 transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+.App {
+  padding-top: 8px;
+  background-color: #202225;
+  height: calc(100vh + 8px);
 }
 
 .App-logo {
@@ -29,13 +176,12 @@ html {
   font-weight: 400;
   font-style: normal;
   color: white;
-  margin-left: calc(75px + 4vw);
+  margin-left: calc(75px + 3em);
   font-size: calc(10px + 1.5vmin);
   top: 10px;
 }
 
 .contactbtn {
-  position: absolute;
   border: none;
   border-radius: 5px;
   font-family: "Orelega One", serif;
@@ -47,9 +193,12 @@ html {
   border: 1px solid white;
   color: white;
   box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2), 0 10px 20px 0 rgba(0,0,0,0.19);
-  margin-left: -64vw;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
+  position: absolute;
+  left: 12.5%;
+  transform: translateX(-50%);
+  margin-top: 25vh;
 }
 
 .contactbtn:hover {
@@ -66,7 +215,7 @@ html {
   font-weight: 400;
   font-style: normal;
   color: rgb(0, 217, 255);
-  margin-left: 4vw;
+  margin-left: 75px;
   font-size: calc(10px + 1.5vmin);
   top: 10px;
 }
@@ -93,6 +242,12 @@ html {
   margin: auto;
 }
 
+.mainContainer {
+  position: relative;
+  width: 100%;
+  margin-top: -60vh;
+}
+
 .nav ul {
   list-style-type: none;
   display: flex;
@@ -105,7 +260,7 @@ html {
   font-family: "Orelega One", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 25px;
+  font-size: calc(10px + 1.5vmin);
 }
 
 a {
@@ -143,17 +298,15 @@ a:hover::before {
 }
 
 h1 {
-  margin-bottom: -300px;
-  margin-left: -450px;
+  position: absolute;
   text-align: left;
-  margin-top: -600px;
   font-size: calc(10px + 7vmin);
   width: 50vw;
+  left: 8%;
 }
 
 h2 {
-  margin-top: -30px;
-  color: #00a808;
+  color: white;
   font-size: calc(10px + 1.7vmin);
 }
 
