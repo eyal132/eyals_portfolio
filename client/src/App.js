@@ -23,34 +23,51 @@ function App() {
         <img className="eyalIMG" src={eyalIMG} />
       </header>
     </div>
-    <body> 
-    <div class="timeline">
-  <div class="container left">
-    <div class="content">
-      <h2>2017</h2>
-      <p>Lorem ipsum..</p>
+    <div className="timeline">
+  <div className="container right">
+    <div className="content">
+      <h2>2024</h2>
+      <p>Developed A Cloud Storage Website</p>
     </div>
   </div>
-  <div class="container right">
-    <div class="content">
-      <h2>2016</h2>
-      <p>Lorem ipsum..</p>
+  <div className="container left">
+    <div className="content">
+      <h2>2024</h2>
+      <p>Capstone Project</p>
     </div>
   </div>
-  <div class="container left">
-    <div class="content">
-      <h2>2017</h2>
-      <p>Lorem ipsum..</p>
+  <div className="container right">
+    <div className="content">
+      <h2>2024</h2>
+      <p>Developed My Second Unity Game</p>
     </div>
   </div>
-  <div class="container right">
-    <div class="content">
-      <h2>2016</h2>
-      <p>Lorem ipsum..</p>
+  <div className="container left">
+    <div className="content">
+      <h2>2023</h2>
+      <p>Learning more advanced OOP, LC3-Assembly</p>
+    </div>
+  </div>
+  <div className="container right">
+    <div className="content">
+      <h2>2022</h2>
+      <p>Learning Matlab, Java, C++, Python</p>
+    </div>
+  </div>
+  <div className="container left">
+    <div className="content">
+      <h2>2021</h2>
+      <p>Developed My First Unity Game</p>
+    </div>
+  </div>
+  <div className="container right">
+    <div className="content">
+      <h2>2017-2020</h2>
+      <p>Highschool Programming Projects</p>
     </div>
   </div>
 </div>
-</body> 
+<p className="start-date">2017</p>
     </section>
   );
 }

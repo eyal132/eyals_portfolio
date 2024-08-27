@@ -12,7 +12,7 @@ html, body {
 
 /* Set a background color */
 body {
-  background-color: #ffffff;
+  background-color: #d1cfcc;
   font-family: Helvetica, sans-serif;
 }
 
@@ -52,7 +52,7 @@ body {
   height: 25px;
   right: -17px;
   background-color: white;
-  border: 4px solid #FF9F55;
+  border: 4px solid #202225;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -111,6 +111,7 @@ body {
   font-family: "Orelega One", serif;
   font-weight: 400;
   font-style: normal;
+  transition: padding 1s, box-shadow 1s;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -146,6 +147,12 @@ body {
   }
 }
 
+.content:hover {
+  cursor: pointer;
+  padding: 30px 30px;
+  box-shadow: 0 12px 12px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
 .App {
   padding-top: 8px;
   background-color: #202225;
@@ -159,7 +166,7 @@ body {
 
 .arrowIMG {
   position: absolute;
-  bottom: 20px;
+  bottom: 12px;
   width: 40px;
 }
 
@@ -168,6 +175,8 @@ body {
   width: 25vw;
   right: 15%;
   top: 20%;
+  pointer-events: none;  /* Disables any interaction with the image */
+  -webkit-user-drag: none;
 }
 
 .second_word {
@@ -232,6 +241,18 @@ body {
   font-family: "Orelega One", serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.start-date {
+  text-align: center;
+  font-family: "Orelega One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: calc(10px + 2.5vmin);
+  width: 100%;
+  background-color: #202225;
+  margin-top: 0px;
+  color: white;
 }
 
 
@@ -314,4 +335,13 @@ h3 {
   position: absolute;
   margin-bottom: -610px;
   font-size: calc(10px + 3vmin);
+}
+
+.journey-start {
+  position: relative;
+  width: 80vw;
+  text-align: center;
+  font-family: "Orelega One", serif;
+  font-weight: 400;
+  font-style: normal;
 }
