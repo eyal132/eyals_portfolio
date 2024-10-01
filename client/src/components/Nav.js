@@ -1,14 +1,13 @@
 import React from 'react';
-import Linkedin from '../media/linkedin_icon.png';
+
 
 function Navbar() {
     return (
         <section className="nav">
         <ul>
-        <li><a href="default.asp">Home</a></li>
-        <li><a href="about.asp">About</a></li>
-        <li><a href="news.asp">Contact</a></li>
-        {/* <img className="linkedInIcon" src={Linkedin} />*/}
+        <li><a href="/">Home</a></li>
+        <li><a href="About">About</a></li>
+        <li><a href="Contact">Contact</a></li>
         </ul>
         </section>
     );

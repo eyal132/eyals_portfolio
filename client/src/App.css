@@ -261,3 +261,40 @@ tr {
   margin-bottom: 25px;
   border-radius: 20px;
 }
+
+.contact-table {
+  margin-top: 50px;
+  width: 50vw;
+  align-items: center;
+  table-layout: fixed;
+}
+
+.contact-table td div {
+  margin: 0 20px 0 20px;
+  background-color: #d6d6d6;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  box-shadow: 0 15px 16px 0 rgba(0,0,0,0.2), 0 15px 20px 0 rgba(0,0,0,0.19);
+}
+
+.contactIMG {
+  width: 100px;
+  position: relative;
+  top: 0px;
+}
+
+.contactIMGEmail {
+  margin-top: 25px;
+  margin-bottom: 8px;
+  width: 100px;
+  position: relative;
+  top: 0px;
+}
+
+.contactIMGLinkedin {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  width: 80px;
+  position: relative;
+  top: 0px;
+}
