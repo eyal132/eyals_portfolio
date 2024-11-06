@@ -43,8 +43,11 @@ function Home() {
         <p class="techCard">React</p>
         <p class="techCard">NodeJS</p>
         <p class="techCard">Express</p>
-        <p class="techCard">MongoDB</p></div></div></td>
-    <div id="aboutProject"><h2 id="aboutTitle">About the Project:</h2><p id="aboutText">Some test describing this thing and how I made it sdfuiosdjhf s sdfois dof sopfi jsdofij o sdof sdof jsodfj sodf jsodjfos djfsod fjsd fijsdfo isdjfoisdjfoisd jfoisd fo sfoisdj dfogj fdoigjf ojgoifd oifdj oigfdj  oigdjroig df oi gjfdoig fdo jfodj oifdj oifd oifd go idf oi gfdoig jfdoi foidsj foisdj foisd f</p></div>
+        <p class="techCard">MongoDB</p></div>
+        </div>
+        <img className="tableIMG" src={spaceIMG} alt="Project" />
+        <div id="aboutProject"><h2 id="aboutTitle">About the Project</h2><p id="aboutText">Some test describing this thing and how I made it sdfuiosdjhf s sdfois dof sopfi jsdofij o sdof sdof jsodfj sodf jsodjfos djfsod fjsd fijsdfo isdjfoisdjfoisd jfoisd fo sfoisdj dfogj fdoigjf ojgoifd oifdj oigfdj  oigdjroig df oi gjfdoig fdo jfodj oifdj oifd oifd go idf oi gfdoig jfdoi foidsj foisdj foisd f</p></div></td>
+
   </tr>
   </div>
   <div className = "project-container">
