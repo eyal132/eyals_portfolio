@@ -3,6 +3,10 @@ import '../App.css';
 import Navbar from './Nav';
 import eyalIMG from '../media/eyal-portrait.png';
 import spaceIMG from '../media/space_game.png';
+import Cornerstone1 from '../media/Cornerstone1.png';
+import Cornerstone2 from '../media/Cornerstone2.png';
+import Cloud1 from '../media/Cloud1.png';
+import Cloud2 from '../media/Cloud2.png';
 
 function Home() {
 
@@ -34,20 +38,40 @@ function Home() {
       </tr>
   <div className = "project-container">
   <tr>
-    <th>Capstone Website "Cornerstone"</th>
+    <th>Capstone Website: "Cornerstone"</th>
   </tr>
   <tr>
     <p id="date">Completion Year: 2024</p>
-    <td><img className="tableIMG" src={spaceIMG} alt="Project" /><div className='tech-stack-container'><h2 id="techStack">Tech Stack: </h2>    
+    <td><img className="tableIMG" src={Cornerstone1} alt="Project" /><div className='tech-stack-container'><h2 id="techStack">Tech Stack: </h2>
     <div class="tech-items">
         <p class="techCard">React</p>
         <p class="techCard">NodeJS</p>
-        <p class="techCard">Express</p>
-        <p class="techCard">MongoDB</p></div>
+        <p class="techCard">HTML</p>
+        <p class="techCard">CSS</p>
+        <p class="techCard">MySQL</p>
+        <p class="techCard">AWS</p>
+        <p class="techCard">OAuth 2.0</p>
+        <p class="techCard">Github</p></div>
         </div>
-        <img className="tableIMG" src={spaceIMG} alt="Project" />
-        <div id="aboutProject"><h2 id="aboutTitle">About the Project</h2><p id="aboutText">Some test describing this thing and how I made it sdfuiosdjhf s sdfois dof sopfi jsdofij o sdof sdof jsodfj sodf jsodjfos djfsod fjsd fijsdfo isdjfoisdjfoisd jfoisd fo sfoisdj dfogj fdoigjf ojgoifd oifdj oigfdj  oigdjroig df oi gjfdoig fdo jfodj oifdj oifd oifd go idf oi gfdoig jfdoi foidsj foisdj foisd f</p></div></td>
-
+        <img className="tableIMG" src={Cornerstone2} alt="Project" />
+        <div id="aboutProject"><h2 id="aboutTitle">About the Project</h2><p id="aboutText">Cornerstone was a final-year project designed to address a real-world challenge faced by our lecturers: the need for an improved project management and allocation system for the course. Following the successful deployment of the website, the project was honored with the title of "Best Computer Science Capstone Project 2024" at the University of Auckland.</p></div></td>
+  </tr>
+  </div>
+  <div className = "project-container">
+  <tr>
+    <th>Cloud Backup Webapp</th>
+  </tr>
+  <tr>
+    <p id="date">Completion Year: 2024</p>
+    <td><img className="tableIMG" src={Cloud1} alt="Project" /><div className='tech-stack-container'><h2 id="techStack">Tech Stack: </h2>
+    <div class="tech-items">
+        <p class="techCard">React</p>
+        <p class="techCard">HTML</p>
+        <p class="techCard">CSS</p>
+        <p class="techCard">Github</p></div>
+        </div>
+        <img className="tableIMG" src={Cloud2} alt="Project" />
+        <div id="aboutProject"><h2 id="aboutTitle">About the Project</h2><p id="aboutText">This web application was a personal initiative, developed to reduce reliance on cloud storage services such as Google Photos. It operates and stores data locally on my personal computer, while providing remote access, functioning similarly to a traditional cloud-based system.</p></div></td>
   </tr>
   </div>
   <div className = "project-container">
@@ -55,29 +79,30 @@ function Home() {
     <th>Radiation Game</th>
   </tr>
   <tr>
-    <p id="date">Completion Year: 2024</p>
-    <td><img className="tableIMG" src={spaceIMG} alt="Project" /><div className='tech-stack-container'><h2 id="techStack">Tech Stack: </h2>    
+    <p id="date">Completion Year: 2023</p>
+    <td><img className="tableIMG" src={spaceIMG} alt="Project" /><div className='tech-stack-container'><h2 id="techStack">Tech Stack: </h2>
     <div class="tech-items">
-        <p class="techCard">React</p>
-        <p class="techCard">NodeJS</p>
-        <p class="techCard">Express</p>
-        <p class="techCard">MongoDB</p></div></div></td>
-    <div id="aboutProject"><h2 id="aboutTitle">About the Project:</h2><p id="aboutText">Some test describing this thing and how I made it sdfuiosdjhf s sdfois dof sopfi jsdofij o sdof sdof jsodfj sodf jsodjfos djfsod fjsd fijsdfo isdjfoisdjfoisd jfoisd fo sfoisdj dfogj fdoigjf ojgoifd oifdj oigfdj  oigdjroig df oi gjfdoig fdo jfodj oifdj oifd oifd go idf oi gfdoig jfdoi foidsj foisdj foisd f</p></div>
+        <p class="techCard">Unity</p>
+        <p class="techCard">C#</p></div>
+        </div>
+        <img className="tableIMG" src={spaceIMG} alt="Project" />
+        <div id="aboutProject"><h2 id="aboutTitle">About the Project</h2><p id="aboutText">Some test describing this thing and how I made it sdfuiosdjhf s sdfois dof sopfi jsdofij o sdof sdof jsodfj sodf jsodjfos djfsod fjsd fijsdfo isdjfoisdjfoisd jfoisd fo sfoisdj dfogj fdoigjf ojgoifd oifdj oigfdj  oigdjroig df oi gjfdoig fdo jfodj oifdj oifd oifd go idf oi gfdoig jfdoi foidsj foisdj foisd f</p></div></td>
   </tr>
   </div>
   <div className = "project-container">
   <tr>
-    <th>PLACEHOLDER</th>
+    <th>Space Game</th>
   </tr>
   <tr>
-    <p id="date">Completion Year: 2024</p>
+    <p id="date">Completion Year: 2023</p>
     <td><img className="tableIMG" src={spaceIMG} alt="Project" /><div className='tech-stack-container'><h2 id="techStack">Tech Stack: </h2>    
     <div class="tech-items">
-        <p class="techCard">React</p>
-        <p class="techCard">NodeJS</p>
-        <p class="techCard">Express</p>
-        <p class="techCard">MongoDB</p></div></div></td>
-    <div id="aboutProject"><h2 id="aboutTitle">About the Project:</h2><p id="aboutText">Some test describing this thing and how I made it sdfuiosdjhf s sdfois dof sopfi jsdofij o sdof sdof jsodfj sodf jsodjfos djfsod fjsd fijsdfo isdjfoisdjfoisd jfoisd fo sfoisdj dfogj fdoigjf ojgoifd oifdj oigfdj  oigdjroig df oi gjfdoig fdo jfodj oifdj oifd oifd go idf oi gfdoig jfdoi foidsj foisdj foisd f</p></div>
+        <p class="techCard">Unity</p>
+        <p class="techCard">C#</p>
+        <p class="techCard">Blender</p></div>
+        </div>
+        <img className="tableIMG" src={spaceIMG} alt="Project" />
+        <div id="aboutProject"><h2 id="aboutTitle">About the Project</h2><p id="aboutText">Some test describing this thing and how I made it sdfuiosdjhf s sdfois dof sopfi jsdofij o sdof sdof jsodfj sodf jsodjfos djfsod fjsd fijsdfo isdjfoisdjfoisd jfoisd fo sfoisdj dfogj fdoigjf ojgoifd oifdj oigfdj  oigdjroig df oi gjfdoig fdo jfodj oifdj oifd oifd go idf oi gfdoig jfdoi foidsj foisdj foisd f</p></div></td>
   </tr>
   </div>
     <div className = "project-container">
@@ -91,8 +116,10 @@ function Home() {
         <p class="techCard">React</p>
         <p class="techCard">NodeJS</p>
         <p class="techCard">Express</p>
-        <p class="techCard">MongoDB</p></div></div></td>
-    <div id="aboutProject"><h2 id="aboutTitle">About the Project:</h2><p id="aboutText">Some test describing this thing and how I made it sdfuiosdjhf s sdfois dof sopfi jsdofij o sdof sdof jsodfj sodf jsodjfos djfsod fjsd fijsdfo isdjfoisdjfoisd jfoisd fo sfoisdj dfogj fdoigjf ojgoifd oifdj oigfdj  oigdjroig df oi gjfdoig fdo jfodj oifdj oifd oifd go idf oi gfdoig jfdoi foidsj foisdj foisd f</p></div>
+        <p class="techCard">MongoDB</p></div>
+        </div>
+        <img className="tableIMG" src={spaceIMG} alt="Project" />
+        <div id="aboutProject"><h2 id="aboutTitle">About the Project</h2><p id="aboutText">Some test describing this thing and how I made it sdfuiosdjhf s sdfois dof sopfi jsdofij o sdof sdof jsodfj sodf jsodjfos djfsod fjsd fijsdfo isdjfoisdjfoisd jfoisd fo sfoisdj dfogj fdoigjf ojgoifd oifdj oigfdj  oigdjroig df oi gjfdoig fdo jfodj oifdj oifd oifd go idf oi gfdoig jfdoi foidsj foisdj foisd f</p></div></td>
   </tr>
   </div>
   <div className = "project-container">
@@ -100,14 +127,14 @@ function Home() {
     <th>Java TicTacToe</th>
   </tr>
   <tr>
-    <p id="date">Completion Year: 2024</p>
+    <p id="date">Completion Year: 2020</p>
     <td><img className="tableIMG" src={spaceIMG} alt="Project" /><div className='tech-stack-container'><h2 id="techStack">Tech Stack: </h2>    
     <div class="tech-items">
-        <p class="techCard">React</p>
-        <p class="techCard">NodeJS</p>
-        <p class="techCard">Express</p>
-        <p class="techCard">MongoDB</p></div></div></td>
-    <div id="aboutProject"><h2 id="aboutTitle">About the Project:</h2><p id="aboutText">Some test describing this thing and how I made it sdfuiosdjhf s sdfois dof sopfi jsdofij o sdof sdof jsodfj sodf jsodjfos djfsod fjsd fijsdfo isdjfoisdjfoisd jfoisd fo sfoisdj dfogj fdoigjf ojgoifd oifdj oigfdj  oigdjroig df oi gjfdoig fdo jfodj oifdj oifd oifd go idf oi gfdoig jfdoi foidsj foisdj foisd f</p></div>
+        <p class="techCard">Netbeans</p>
+        <p class="techCard">Java</p></div>
+        </div>
+        <img className="tableIMG" src={spaceIMG} alt="Project" />
+        <div id="aboutProject"><h2 id="aboutTitle">About the Project</h2><p id="aboutText">Some test describing this thing and how I made it sdfuiosdjhf s sdfois dof sopfi jsdofij o sdof sdof jsodfj sodf jsodjfos djfsod fjsd fijsdfo isdjfoisdjfoisd jfoisd fo sfoisdj dfogj fdoigjf ojgoifd oifdj oigfdj  oigdjroig df oi gjfdoig fdo jfodj oifdj oifd oifd go idf oi gfdoig jfdoi foidsj foisdj foisd f</p></div></td>
   </tr>
   </div>
 </table>

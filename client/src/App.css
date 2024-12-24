@@ -336,10 +336,11 @@ tr {
   position: absolute;
   left: 45vw;
   margin-top: calc(40px);
+  width: 20vw;
 }
 
 #aboutProject {
-  margin-top: -60px;
+  margin-top: -50px;
 }
 
 #aboutTitle {
@@ -365,12 +366,13 @@ tr {
   flex: 0 0 auto;
   white-space: nowrap;
   font-size: calc(10px + 1vmin);
-  margin: 0px 3px 0 3px;
+  margin: 0px 3px 20px 3px;
   margin-top: -10px;
 }
 
 .tech-stack-container {
-  display: flex;
+  margin-top: 30px;
+  display: block;
   align-items: center;
   flex-wrap: wrap;
 }
