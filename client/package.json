@@ -38,7 +38,6 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://eyla132.github.io/eyals_portfolio",
   "devDependencies": {
     "gh-pages": "^6.2.0"
   }
