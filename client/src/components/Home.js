@@ -30,7 +30,7 @@ function Home() {
       element.style.top = `${value}px`; // Apply the calculated value to font size
     }
   } else {
-    element.style.top = `-150px`;
+    element.style.top = `-130px`;
   }
   }, []);
 

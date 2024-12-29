@@ -428,7 +428,7 @@ tr {
 
   .eyalIMG {
     width: 80vw;
-    max-width: 450px;
+    max-width: 400px;
   }
 
   .mainContainer {
@@ -440,9 +440,9 @@ tr {
 
   h1 {
     text-align: center;
-    font-size: calc(10px + 7vmin);
+    font-size: calc(10px + 6vmin);
     width: 100%;
-    margin-top: -80px;
+    margin-top: -100px;
   }
 
   .contactbtn {
