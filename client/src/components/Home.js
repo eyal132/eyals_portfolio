@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import '../App.css';
 import Navbar from './Nav';
 import eyalIMG from '../media/eyal.png';
@@ -15,9 +16,12 @@ import TicTacToe2 from '../media/JavaTicTacToe2.png';
 
 function Home() {
 
+  const navigate = useNavigate();
   const contactPage = () => {
-    window.location.href = "Contact";
-  }
+
+    navigate("/contact"); // Navigate to the /contact route
+    
+  };
 
   useEffect(() => {
     const element = document.querySelector(".eyalIMG");
