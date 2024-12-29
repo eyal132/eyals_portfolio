@@ -5,8 +5,8 @@ function Navbar() {
     return (
         <section className="nav">
         <ul>
-        <li><a href="/">Portfolio</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><Link to="/">Portfolio</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
         </ul>
         </section>
     );
