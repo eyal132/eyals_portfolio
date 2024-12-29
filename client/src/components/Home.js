@@ -25,7 +25,7 @@ function Home() {
     if (screenWidth > 1000) {
     if (element) {
       const vw = window.innerWidth / 100; // 1% vw
-      const value = 1 / (10 * vw) + 150; // inverse correlation to vw as width gets smaller, value increases
+      const value = 1 / (10 * vw) + 180; // inverse correlation to vw as width gets smaller, value increases
       console.log('Calculated value:', value);
       element.style.top = `${value}px`; // Apply the calculated value to font size
     }
