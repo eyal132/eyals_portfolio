@@ -10,6 +10,8 @@ import Cloud1 from '../media/Cloud1.png';
 import Cloud2 from '../media/Cloud2.png';
 import Radiation1 from '../media/radiation1.png';
 import Radiation2 from '../media/radiation2.png';
+import TicTacToe1 from '../media/JavaTicTacToe1.png';
+import TicTacToe2 from '../media/JavaTicTacToe2.png';
 
 function Home() {
 
@@ -114,13 +116,13 @@ function Home() {
   </tr>
   <tr>
     <p id="date">Completion Year: 2020</p>
-    <td><img className="tableIMG" src={spaceIMG} alt="Project" /><div className='tech-stack-container'><h2 id="techStack">Tech Stack: </h2>    
+    <td><img className="tableIMG" src={TicTacToe1} alt="Project" /><div className='tech-stack-container'><h2 id="techStack">Tech Stack: </h2>    
     <div class="tech-items">
         <p class="techCard">Netbeans</p>
         <p class="techCard">Java</p></div>
         </div>
-        <img className="tableIMG" src={spaceIMG} alt="Project" />
-        <div id="aboutProject"><h2 id="aboutTitle">About the Project</h2><p id="aboutText">Some test describing this thing and how I made it sdfuiosdjhf s sdfois dof sopfi jsdofij o sdof sdof jsodfj sodf jsodjfos djfsod fjsd fijsdfo isdjfoisdjfoisd jfoisd fo sfoisdj dfogj fdoigjf ojgoifd oifdj oigfdj  oigdjroig df oi gjfdoig fdo jfodj oifdj oifd oifd go idf oi gfdoig jfdoi foidsj foisdj foisd f</p></div></td>
+        <img className="tableIMG" src={TicTacToe2} alt="Project" />
+        <div id="aboutProject"><h2 id="aboutTitle">About the Project</h2><p id="aboutText">My first major project, completed during high school, played a significant role in earning the Wallace Cup & Book Award for first-equal in Digital Technology. This project was one of the earliest endeavors that ignited my passion for programming and computer science.</p></div></td>
   </tr>
   </div>
 </table>
