@@ -243,12 +243,13 @@ tr {
 }
 
 .tableIMG {
-  min-width: 30vw;
-  width: 30vw;
+  min-width: 28vw;
+  width: 28vw;
   border-radius: 5px;
   margin-top: 18px;
   margin: auto;
-  width: 95%;
+  width: 90%;
+  margin-top: 10px;
 }
 
 .tableTitle {
@@ -440,7 +441,7 @@ tr {
 
   h1 {
     text-align: center;
-    font-size: calc(10px + 6vmin);
+    font-size: calc(10px + 5vmin);
     width: 100%;
     margin-top: -110px;
   }
