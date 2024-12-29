@@ -428,7 +428,7 @@ tr {
 
   .eyalIMG {
     width: 80vw;
-    max-width: 400px;
+    max-width: 340px;
   }
 
   .mainContainer {
@@ -442,12 +442,13 @@ tr {
     text-align: center;
     font-size: calc(10px + 6vmin);
     width: 100%;
-    margin-top: -100px;
+    margin-top: -110px;
   }
 
   .contactbtn {
     display: inline-block;
-    margin-left: 130px;
+    margin: 0 auto; /* Centers the button horizontally */
+    transform: translateX(0); /* Removes previous offset */
   }
 }
 
@@ -482,6 +483,7 @@ tr {
   }
 
   .contactbtn {
+    display: inline-block;
     margin-left: 80px;
   }
 }

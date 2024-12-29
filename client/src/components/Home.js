@@ -30,7 +30,12 @@ function Home() {
       element.style.top = `${value}px`; // Apply the calculated value to font size
     }
   } else {
-    element.style.top = `-130px`;
+    if (element) {
+      const vh = window.innerHeight / 100; // 1% vw
+      const value = 1 / (0.0009 * vh) - 300; // inverse correlation to vw as width gets smaller, value increases
+      console.log('Calculated value:', value);
+      element.style.top = `${value}px`; // Apply the calculated value to font size
+    }
   }
   }, []);
 
