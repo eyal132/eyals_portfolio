@@ -6,7 +6,7 @@ function Navbar() {
         <section className="nav">
         <ul>
         <li><a href="/">Portfolio</a></li>
-        <li><a href="Contact">Contact</a></li>
+        <li><a href="/contact">Contact</a></li>
         </ul>
         </section>
     );
