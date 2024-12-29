@@ -443,7 +443,6 @@ tr {
     text-align: center;
     font-size: calc(10px + 5vmin);
     width: 100%;
-    margin-top: -110px;
   }
 
   .contactbtn {
@@ -486,5 +485,17 @@ tr {
   .contactbtn {
     display: inline-block;
     margin-left: 80px;
+  }
+}
+
+@media (max-height: 700px) {
+  h1 {
+    margin-top: -140px;
+  }
+}
+
+@media (min-height: 701px) {
+  h1 {
+    margin-top: -100px;
   }
 }
