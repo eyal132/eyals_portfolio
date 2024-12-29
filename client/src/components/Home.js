@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import '../App.css';
 import Navbar from './Nav';
 import eyalIMG from '../media/eyal.png';
@@ -19,22 +19,38 @@ function Home() {
     window.location.href = "Contact";
   }
 
+  useEffect(() => {
+    const element = document.querySelector(".eyalIMG");
+    const screenWidth = window.innerWidth;
+    if (screenWidth > 1000) {
+    if (element) {
+      const vw = window.innerWidth / 100; // 1% vw
+      const value = 1 / (10 * vw) + 150; // inverse correlation to vw as width gets smaller, value increases
+      console.log('Calculated value:', value);
+      element.style.top = `${value}px`; // Apply the calculated value to font size
+    }
+  } else {
+    element.style.top = `-150px`;
+  }
+  }, []);
+
   return (
     <section className="page">
     <div className="App" >
       <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       <Navbar />
-      <p>
+      <div className="eyal-logo">
         <span className="name">Eyal's </span><span className="second_word"> Portfolio</span>
-      </p>
+      </div>
       <header className="App-header">
         <div className="mainContainer">
+        <img className="eyalIMG" src={eyalIMG} alt="Eyal"/>
         <h1>Explore my history of projects.</h1>
         <button className="contactbtn" onClick={contactPage}>Contact</button>
         </div>
 
         <h3 id="my-journey"><a href="#projects">My Journey</a></h3>
-        <img className="eyalIMG" src={eyalIMG} alt="Eyal"/>
+
       </header>
     </div>
     <body>
@@ -46,8 +62,8 @@ function Home() {
     <th>Capstone Website: "Cornerstone"</th>
   </tr>
   <tr>
-    <p id="date">Completion Year: 2024</p>
-    <td><img className="tableIMG" src={Cornerstone1} alt="Project" /><div className='tech-stack-container'><h2 id="techStack">Tech Stack: </h2>
+    <td>
+      <img className="tableIMG" src={Cornerstone1} alt="Project" /><div className='tech-stack-container'><p id="date">Completion Year: 2024</p><h2 id="techStack">Tech Stack: </h2>
     <div class="tech-items">
         <p class="techCard">React</p>
         <p class="techCard">NodeJS</p>
@@ -67,8 +83,7 @@ function Home() {
     <th>Cloud Backup Webapp</th>
   </tr>
   <tr>
-    <p id="date">Completion Year: 2024</p>
-    <td><img className="tableIMG" src={Cloud1} alt="Project" /><div className='tech-stack-container'><h2 id="techStack">Tech Stack: </h2>
+    <td><img className="tableIMG" src={Cloud1} alt="Project" /><div className='tech-stack-container'><p id="date">Completion Year: 2024</p><h2 id="techStack">Tech Stack: </h2>
     <div class="tech-items">
         <p class="techCard">React</p>
         <p class="techCard">HTML</p>
@@ -84,8 +99,7 @@ function Home() {
     <th>Radiation Game</th>
   </tr>
   <tr>
-    <p id="date">In Devlopment Since: 2023</p>
-    <td><img className="tableIMG" src={Radiation1} alt="Project" /><div className='tech-stack-container'><h2 id="techStack">Tech Stack: </h2>
+    <td><img className="tableIMG" src={Radiation1} alt="Project" /><div className='tech-stack-container'><p id="date">In Devlopment Since: 2023</p><h2 id="techStack">Tech Stack: </h2>
     <div class="tech-items">
         <p class="techCard">Unity</p>
         <p class="techCard">C#</p></div>
@@ -99,8 +113,7 @@ function Home() {
     <th>Space Game</th>
   </tr>
   <tr>
-    <p id="date">Completion Year: 2023</p>
-    <td><img className="tableIMG" src={spaceIMG} alt="Project" /><div className='tech-stack-container'><h2 id="techStack">Tech Stack: </h2>    
+    <td><img className="tableIMG" src={spaceIMG} alt="Project" /><div className='tech-stack-container'><p id="date">Completion Year: 2023</p><h2 id="techStack">Tech Stack: </h2>    
     <div class="tech-items">
         <p class="techCard">Unity</p>
         <p class="techCard">C#</p>
@@ -115,8 +128,7 @@ function Home() {
     <th>Java TicTacToe</th>
   </tr>
   <tr>
-    <p id="date">Completion Year: 2020</p>
-    <td><img className="tableIMG" src={TicTacToe1} alt="Project" /><div className='tech-stack-container'><h2 id="techStack">Tech Stack: </h2>    
+    <td><img className="tableIMG" src={TicTacToe1} alt="Project" /><div className='tech-stack-container'><p id="date">Completion Year: 2020</p><h2 id="techStack">Tech Stack: </h2>    
     <div class="tech-items">
         <p class="techCard">Netbeans</p>
         <p class="techCard">Java</p></div>

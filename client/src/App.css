@@ -37,10 +37,10 @@ body {
 }
 
 .eyalIMG {
-  position: absolute;
-  width: 25vw;
-  right: 15%;
-  top: 20%;
+  position: relative;
+  height: auto;
+  justify-content: center;
+  align-items: center;
   pointer-events: none;  /* Disables any interaction with the image */
   -webkit-user-drag: none;
 }
@@ -52,7 +52,7 @@ body {
   font-style: normal;
   color: #f0f0f0;
   margin-left: calc(75px + 3em);
-  font-size: calc(10px + 1.5vmin);
+  font-size: 2.5vmin;
   top: 10px;
 }
 
@@ -70,10 +70,7 @@ body {
   box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2), 0 10px 20px 0 rgba(0,0,0,0.19);
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
-  position: absolute;
-  left: 12.5%;
   transform: translateX(-50%);
-  margin-top: 25vh;
 }
 
 .contactbtn:hover {
@@ -91,7 +88,7 @@ body {
   font-style: normal;
   color: rgb(0, 217, 255);
   margin-left: 75px;
-  font-size: calc(10px + 1.5vmin);
+  font-size: 2.5vmin;
   top: 10px;
 }
 
@@ -129,12 +126,11 @@ body {
 }
 
 .mainContainer {
-  position: relative;
-  width: 100%;
-  margin-top: -60vh;
+  display: inline-block;
 }
 
 .nav ul {
+  margin-left: -50px;
   list-style-type: none;
   display: flex;
   justify-content: center;
@@ -142,7 +138,7 @@ body {
 }
 
 .nav ul li {
-  margin: 0 30px;
+  margin: 0 20px;
   font-family: "Orelega One", serif;
   font-weight: 400;
   font-style: normal;
@@ -184,12 +180,8 @@ a:hover::before {
 }
 
 h1 {
-  position: absolute;
-  text-align: left;
-  font-size: calc(10px + 7vmin);
-  width: 50vw;
-  left: 8%;
   color: #f0f0f0;
+  margin-bottom: 10px;
 }
 
 h2 {
@@ -219,16 +211,25 @@ table {
   width: 55%;
   border-collapse: collapse;
   text-align: center;
+  align-items: center;
   font-family: "Orelega One", serif;
   font-weight: 400;
   font-style: normal;
 }
 
-table p, img {
+table p {
   text-align: left;
   width: 90%;
   margin-left: 5%;
   margin-top: 20px;
+}
+
+table img {
+  text-align: center;
+  align-items: center;
+  width: 90%;
+  margin-top: 20px;
+
 }
 
 td {
@@ -242,9 +243,12 @@ tr {
 }
 
 .tableIMG {
-  width: 25vw;
+  min-width: 30vw;
+  width: 30vw;
   border-radius: 5px;
   margin-top: 18px;
+  margin: auto;
+  width: 95%;
 }
 
 .tableTitle {
@@ -272,6 +276,9 @@ tr {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: normal;
+  margin-left: auto;
+  margin-right: auto;
+  transition: min-width .2s;
 }
 
 .project-container td {
@@ -325,36 +332,34 @@ tr {
 }
 
 #techStack {
-  margin-left: 6px;
   text-align: left;
   color: #f0f0f0;
+  margin-top: 40px;
+  margin-left: 10px;
 }
 
 #date {
   font-size: calc(10px + 1.5vmin);
   color:#f0f0f0;
-  position: absolute;
-  left: 45vw;
-  margin-top: calc(40px);
-  width: 20vw;
+  position: relative;
+  left: -20px;
+  width: 30vw;
 }
 
 #aboutProject {
-  margin-top: -50px;
+  margin-top: -20px;
 }
 
 #aboutTitle {
   color: #f0f0f0;
   text-align: center;
   margin-bottom: -15px;
-  margin-left: -10px;
 }
 
 #aboutText {
-  width: 95%;
+  width: 90%;
   font-size: calc(10px + 1.25vmin);
   color: #f0f0f0;
-  margin-left: 8px;
 }
 
 .techCard {
@@ -375,6 +380,8 @@ tr {
   display: block;
   align-items: center;
   flex-wrap: wrap;
+  padding-right: 10px;
+  margin-left: 30px;
 }
 
 .tech-items {
@@ -407,4 +414,74 @@ tr {
 
 .linkedInLink:hover::before {
   transform: scaleX(1);
+}
+
+/* For screens smaller than or equal to 1000px */
+@media (max-width: 1000px) {
+  .project-container {
+    max-width: 95vw; /* 90% of the viewport width */
+    min-width: 95vw;
+  }
+  .eyal-logo {
+    margin-left: -60px;
+  }
+
+  .eyalIMG {
+    width: 80vw;
+    max-width: 450px;
+  }
+
+  .mainContainer {
+    width: 90vw;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: calc(10px + 7vmin);
+    width: 100%;
+    margin-top: -80px;
+  }
+
+  .contactbtn {
+    display: inline-block;
+    margin-left: 130px;
+  }
+}
+
+/* For screens larger than or equal to 1001px */
+@media (min-width: 1001px) {
+  .project-container {
+    max-width: 65vw; /* 65% of the viewport width */
+    min-width: 750px;
+  }
+
+  .eyal-logo {
+    margin-left: 0px;
+  }
+
+  .eyalIMG {
+    min-width: 350px;
+    width: 27vw;
+    left: 100%;
+  }
+
+  .mainContainer {
+    width: calc(60% - 100px);
+    margin-left: -30vw;
+    margin-top: -45vh;
+  }
+
+  h1 {
+    text-align: left;
+    font-size: calc(10px + 7vmin);
+    width: 50vw;
+    margin-top: -150px;
+  }
+
+  .contactbtn {
+    margin-left: 80px;
+  }
 }
