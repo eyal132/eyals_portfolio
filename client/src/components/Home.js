@@ -32,7 +32,7 @@ function Home() {
   } else {
     if (element) {
       const vh = window.innerHeight / 100; // 1% vw
-      const value = 1 / (0.0009 * vh) - 330; // inverse correlation to vw as width gets smaller, value increases
+      const value = 1 / (0.0009 * vh) - 340; // inverse correlation to vw as height gets smaller, value increases
       console.log('Calculated value:', value);
       element.style.top = `${value}px`; // Apply the calculated value to font size
     }
