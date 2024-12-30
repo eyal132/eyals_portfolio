@@ -10,8 +10,10 @@ function ContactPage() {
         <section>
             <div className='App'>
             <Navbar />
+            <div className="eyal-logo">
             <span className="name">Eyal's </span><span className="second_word"> Portfolio</span>
-
+            </div>
+            
             <table className = "contact-table">
                     <tbody>
                         <tr>

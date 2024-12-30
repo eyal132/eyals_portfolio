@@ -296,17 +296,20 @@ tr {
 }
 
 .contact-table {
+  display: grid;
+  place-items: center; /* Centers both horizontally and vertically */
   margin-top: 50px;
-  width: 50vw;
+  width: 90vw;
   align-items: center;
   table-layout: fixed;
 }
 
 .contact-table td div {
-  margin: 0 20px 0 20px;
+  margin: 0 5px 0 5px;
   background-color: #d3d3d3;
   padding-bottom: 40px;
   padding-top: 20px;
+  min-width: 275px;
 }
 
 .contactIMG {
@@ -327,7 +330,7 @@ tr {
 .contactIMGLinkedin {
   margin-top: 25px;
   margin-bottom: 15px;
-  width: 80px;
+  width: 82px;
   position: relative;
   top: 0px;
 }
@@ -449,6 +452,12 @@ tr {
     display: inline-block;
     margin: 0 auto; /* Centers the button horizontally */
     transform: translateX(0); /* Removes previous offset */
+  }
+
+  .contact-table td {
+    display: block; /* Ensure each item takes the full width */
+    margin-bottom: 20px; /* Add spacing between items */
+    font-size: calc(25px + 0.25vmin);
   }
 }
 
