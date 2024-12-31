@@ -459,6 +459,25 @@ tr {
     margin-bottom: 20px; /* Add spacing between items */
     font-size: calc(25px + 0.25vmin);
   }
+
+  .tableIMG {
+    min-width: 20vw;
+    width: 20vw;
+    border-radius: 5px;
+    margin-top: 18px;
+    margin: auto;
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  .project-container td {
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    column-gap: 5px;
+    width: 100%;
+  }
+
 }
 
 /* For screens larger than or equal to 1001px */
