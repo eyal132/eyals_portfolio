@@ -478,6 +478,14 @@ tr {
     width: 100%;
   }
 
+  #aboutProject {
+    margin-top: 10px;
+  }
+
+  #date {
+    width: 50vw;
+  }
+
 }
 
 /* For screens larger than or equal to 1001px */
