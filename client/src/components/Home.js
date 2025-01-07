@@ -13,7 +13,8 @@ import Radiation1 from '../media/radiation1.png';
 import Radiation2 from '../media/radiation2.png';
 import TicTacToe1 from '../media/JavaTicTacToe1.png';
 import TicTacToe2 from '../media/JavaTicTacToe2.png';
-
+import IMGProcessing1 from '../media/IMGProcessing1.png';
+import IMGProcessing2 from '../media/IMGProcessing2.png';
 function Home() {
 
   const navigate = useNavigate();
@@ -101,6 +102,19 @@ function Home() {
         </div>
         <img className="tableIMG" src={Cloud2} alt="Project" />
         <div id="aboutProject"><h2 id="aboutTitle">About the Project</h2><p id="aboutText">This web application was a personal initiative, developed to reduce reliance on cloud storage services such as Google Photos. It operates and stores data locally on my personal computer, while providing remote access, functioning similarly to a traditional cloud-based system.</p></div></td>
+  </tr>
+  </div>
+  <div className = "project-container">
+  <tr>
+    <th>Coin Detection Image Processing</th>
+  </tr>
+  <tr>
+    <td><img className="tableIMG" src={IMGProcessing1} alt="Project" /><div className='tech-stack-container'><p id="date">Completion Year: 2024</p><h2 id="techStack">Tech Stack: </h2>
+    <div class="tech-items">
+        <p class="techCard">Python</p></div>
+        </div>
+        <img className="tableIMG" src={IMGProcessing2} alt="Project" />
+        <div id="aboutProject"><h2 id="aboutTitle">About the Project</h2><p id="aboutText">This university project was undertaken to improve our understanding of implementing image processing techniques for coin detection. The techniques applied included filtering, adaptive thresholding, erosion, and dilation.</p></div></td>
   </tr>
   </div>
   <div className = "project-container">
