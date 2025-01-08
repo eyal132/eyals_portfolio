@@ -85,7 +85,7 @@ function Home() {
         <p class="techCard">Github</p></div>
         </div>
         <img className="tableIMG" src={Cornerstone2} alt="Project" />
-        <div id="aboutProject"><h2 id="aboutTitle">About the Project</h2><p id="aboutText">Cornerstone was a final-year group project designed to address a real-world challenge faced by our lecturers: the need for an improved project management and allocation system for the course. Following the successful deployment of the website, the project was honored with the title of "Best Computer Science Capstone Project 2024" at the University of Auckland.</p></div></td>
+        <div id="aboutProject"><h2 id="aboutTitle">About the Project</h2><p id="aboutText">Cornerstone was a final-year group project designed to address a real-world challenge faced by our lecturers: the need for an improved project management and allocation system for the course. Following the successful deployment of the website, the project was honored with the title of "Best Computer Science Capstone Project 2024" at the University of Auckland. My role included tasks such as implementing password hashing, designing API routes, structuring the database, creating queries, User authentication and Google OAuth, aswell as handling various other backend-related tasks. </p></div></td>
   </tr>
   </div>
   <div className = "project-container">
