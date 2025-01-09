@@ -85,7 +85,7 @@ function Home() {
         <p class="techCard">Github</p></div>
         </div>
         <img className="tableIMG" src={Cornerstone2} alt="Project" />
-        <div id="aboutProject"><h2 id="aboutTitle">About the Project</h2><p id="aboutText">Cornerstone was a final-year group project designed to address a real-world challenge faced by our lecturers: the need for an improved project management and allocation system for the course. Following the successful deployment of the website, the project was honored with the title of "Best Computer Science Capstone Project 2024" at the University of Auckland. My role included tasks such as implementing password hashing, designing API routes, structuring the database, creating queries, User authentication and Google OAuth, aswell as handling various other backend-related tasks. </p></div></td>
+        <div id="aboutProject"><h2 id="aboutTitle">About the Project</h2><p id="aboutText">Cornerstone was a final-year group project designed to address a real-world challenge faced by our lecturers: the need for an improved project management and allocation system for the course. Following the successful deployment of the website, the project was honored with the title of "Best Computer Science Capstone Project 2024 Semester 2" at the University of Auckland. My role included tasks such as implementing password hashing, designing API routes, structuring the database, creating queries, User authentication and Google OAuth, aswell as handling various other backend-related tasks. </p></div></td>
   </tr>
   </div>
   <div className = "project-container">
@@ -128,7 +128,7 @@ function Home() {
         <p class="techCard">C#</p></div>
         </div>
         <img className="tableIMG" src={Radiation2} alt="Project" />
-        <div id="aboutProject"><h2 id="aboutTitle">About the Project</h2><p id="aboutText">This project is a horror-themed game designed to immerse players in a chilling and eerie atmosphere. With haunting sound effects and a focus on creating an unsettling environment, the game aims to deliver a linear, story-driven experience set in an abandoned nuclear power plant. The primary objective is to evoke a sense of suspense and dread, making the atmospheric design a central element of the gameplay.</p></div></td>
+        <div id="aboutProject"><h2 id="aboutTitle">About the Project</h2><p id="aboutText">This project is a horror-themed game designed to immerse players in a chilling and eerie atmosphere. With a focus on creating an unsettling environment, the game aims to deliver a story-driven experience set in an abandoned nuclear power plant. The primary objective is to evoke a sense of suspense and dread, making the atmospheric design a central element of the gameplay.</p></div></td>
   </tr>
   </div>
   <div className = "project-container">
