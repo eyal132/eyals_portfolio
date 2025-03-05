@@ -34,6 +34,7 @@
 
 
 html, body {
+  height: 100%;
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
@@ -300,9 +301,12 @@ body {
 
 .parallax__layer-img {
   pointer-events: none;
+  object-fit: cover;
+  -webkit-object-fit: cover; 
   width: 100%;
   max-width: none;
-  height: 125vh;
+  height: 117.5%;
+  top: -17.5%;
   position: absolute;
   left: 0;
 }
