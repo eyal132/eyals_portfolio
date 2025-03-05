@@ -600,7 +600,6 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 93vh;
 }
 
 .projectContainer.right h2 {
@@ -909,6 +908,10 @@ table {
     top: 3.5vh;
   }
 
+  .landingPage {
+    height: 93vh;
+  }
+
 }
 
 /* For screens smaller than or equal to 1050 */
@@ -1042,7 +1045,6 @@ table {
     text-decoration: none;
   }
 
-  
 .CVInfoTable th {
   display: block;
   width: 100%;
@@ -1080,6 +1082,11 @@ table {
   font-size: calc(15px + 1vw);
   font-style: normal;
 }
+
+.landingPage {
+  height: 93vh;
+}
+
 }
 
 /* For adjusting landing page smaller than 526 pixels */
@@ -1141,10 +1148,16 @@ table {
   .viewWorkButton {
     height: 120svh;
   }
+  
 }
 
 /* For screens larger than or equal to 1251px wide */
 @media (min-width: 1051px) {
+
+  .landingPage {
+    height: 100vh;
+  }
+
   .projectsContainer IMG{
     width: 50vw;
     height: auto;
