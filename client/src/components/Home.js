@@ -170,6 +170,9 @@ console.log(document.readyState);
         <tr>
         <a className = "CVLink" href={CV} target="_blank" rel="noreferrer">CV</a>
         </tr>
+        <tr>
+        <a className = "normalLink" href="https://www.linkedin.com/in/eyal-blumental-erez-b6ba4627b/" target="_blank" rel="noreferrer">Linkedin</a>
+        </tr>
       </table>
       <table className="CVInfoTable">
         <tr>
