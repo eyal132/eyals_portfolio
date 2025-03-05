@@ -168,14 +168,14 @@ console.log(document.readyState);
         <p className="title">CAREER OVERVIEW</p>
         </tr>
         <tr>
-        <a className = "CVLink" href={CV} target="_blank">CV</a>
+        <a className = "CVLink" href={CV} target="_blank" rel="noreferrer">CV</a>
         </tr>
       </table>
       <table className="CVInfoTable">
         <tr>
           <th className="middleTable">
             <h2 className="aboutTitle">ABOUT</h2>
-            <img src={EyalIMG} className="eyalIMG"></img>
+            <img src={EyalIMG} className="eyalIMG" alt=""></img>
             <p>I believe in continuous learning and keeping an open mind to new ideas. I am always expanding my knowledge of technologies, frameworks, and programming languages. With a strong passion for software and full-stack web development. When I'm away from the computer I enjoy reading, powerlifting, and snowboarding.</p>
           </th>
           <th className="limitWidth">
@@ -347,7 +347,7 @@ console.log(document.readyState);
   </div>
   <div className="spacer"></div>
   <div className="scrollUpContainer">
-    <a className="scrollUpLink" href="#landingPage"><img src={Arrow} className="scrollUpArrow"></img></a>
+    <a className="scrollUpLink" href="#landingPage"><img src={Arrow} className="scrollUpArrow" alt=""></img></a>
   </div>
     </section>
 
