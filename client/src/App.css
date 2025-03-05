@@ -899,13 +899,11 @@ table {
     position: absolute;
     display: inline-block;
     margin-left: 10vw;
-    top: 5px;
   }
   
   .subText {
     margin-left: 10vw;
     font-size: 1.75vmin;
-    top: 3.5vh;
   }
 
   .landingPage {
@@ -926,7 +924,6 @@ table {
     position: absolute;
     display: inline-block;
     text-align: center;
-    top: 5px;
     width: 100%;
   }
 
@@ -1151,6 +1148,30 @@ table {
   
 }
 
+
+/* adjust nav bar text for screens taller than 1110 pixels */
+@media (min-height: 1110px) {
+  .name {
+    top: -10px
+  }
+
+  .subText {
+    top: 2.2vh;
+  }
+}
+
+/* adjust nav bar text for screens taller than 1110 pixels */
+@media (max-height: 1109px) {
+  .name {
+    top: 5px
+  }
+
+  .subText {
+    top: 3.5vh;
+  }
+}
+
+
 /* For screens larger than or equal to 1251px wide */
 @media (min-width: 1051px) {
 
@@ -1230,13 +1251,11 @@ table {
     position: absolute;
     display: inline-block;
     margin-left: 10vw;
-    top: 5px;
   }
   
   .subText {
     margin-left: 10vw;
     font-size: 1.75vmin;
-    top: 3.5vh;
   }
 
   .nav table {
