@@ -302,9 +302,9 @@ body {
   object-fit: cover;
   width: 100%;
   max-width: none;
-  height: 117.5%;
+  height: 127.5%;
   position: absolute;
-  top: -17.5%;
+  top: -27.5%;
   left: 0;
 }
 
@@ -988,7 +988,6 @@ table {
   .projectsTitle {
     font-size: calc(15px + 1vw);
     width: 65vw;
-    padding-top: 20vh;
     margin-bottom: -10vh;
   }
 
@@ -1089,8 +1088,6 @@ table {
   .viewWorkButton {
     height: 125svh;
   }
-
-
 }
 
 /* **ADJUSTMENTS FOR PERSON LANDINGPAGE INITIAL POSITION */
