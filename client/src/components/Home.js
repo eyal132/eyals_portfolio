@@ -1,36 +1,23 @@
-import React, { useEffect, useRef } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect } from "react";
 import '../App.css';
 import Navbar from './Nav';
-import { Link } from "react-router-dom";
 import anime from "animejs";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Lenis from 'lenis'
 import Cornerstone1 from '../media/Cornerstone1.png';
 import Part1 from '../media/part1.png';
 import Part2 from '../media/part2.png';
 import IMGProcessing1 from '../media/IMGProcessing1.png';
-import Radiation1 from '../media/radiation1.png';
 import Radiation2 from '../media/radiation2.png';
 import spaceIMG from '../media/space_game.png';
-import spaceIMG2 from '../media/space_game2.png';
 import TicTacToe1 from '../media/JavaTicTacToe1.png';
-import TicTacToe2 from '../media/JavaTicTacToe2.png';
 import Cloud1 from '../media/Cloud1.png';
-import Cloud2 from '../media/Cloud2.png';
 import EyalIMG from '../media/eyal.png';
 import CV from '../media/EyalCV.pdf';
 import Arrow from '../media/arrow.png';
 
 function Home() {
 
-  const navigate = useNavigate();
-  const contactPage = () => {
-
-    navigate("/contact"); // Navigate to the /contact route
-    
-  };
 console.log(document.readyState);
 
   //If document has loaded, then start animations
