@@ -189,7 +189,7 @@ console.log(document.readyState);
                         <div class="education-degree">Bachelor of Science</div>
                         <div class="education-school">University of Auckland</div>
                         <div class="education-details">Major: Computer Science</div>
-                        <div class="education-date">Graduating: May 2025</div>
+                        <div class="education-date">Graduated: May 2025</div>
                         <br></br>
                     </div>
                     <div class="education-item">
